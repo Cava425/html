@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script>
+        window.onload = function ()
+        {
+            var oP = document.getElementById("content");
+
+            oP.onmouseover = function ()
+            {
+                this.style.color = "red";
+            };
+            oP.onmouseout = function ()
+            {
+                this.style.color = "black";
+            };
+        };
+    </script>
+</head>
+<body>
+    <p id="content">绿叶学习网</p>
+</body>
+</html>

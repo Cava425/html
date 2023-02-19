@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>浮动布局</title>
+		<style type="text/css">
+			#test{
+				width: 800px;
+				height: 600px;
+				padding: 10px;
+				background-color: antiquewhite;
+			}
+			#test #t1{
+				height: 100px;
+				background-color: aqua;
+			}
+			#test #t2{
+				width: 595px;
+				height: 380px;
+				background-color: blue;
+				float: left;
+				margin: 10px 0;
+			}
+			#test #t3{
+				width: 205px;
+				height: 380px;
+				background-color: brown;
+				float: left;
+				margin: 10px 0;
+			}
+			#test #t4{
+				position: relative;
+				width: 800px;
+				height: 100px;
+				background-color: chocolate;
+				top: 400px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="test">
+			<div id="t1"></div>
+			<div id="t2"></div>
+			<div id="t3"></div>
+			<div id="t4"></div>
+		</div>
+	</body>
+</html>

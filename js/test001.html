@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script>
+		// 在页面加载完成后执行函数
+        window.onload = function ()
+        {
+            var oDiv = document.getElementById("div1");
+            oDiv.style.color = "red";
+			
+			var oUl = document.getElementById("list");
+			var oLi = oUl.getElementsByTagName("li");
+			oLi[2].style.color = "red";
+			
+			var arr = ["中", "发财"];
+			for(var i = 0; i < 2; i++){
+				oLi[i].innerHTML = arr[i];
+				oLi[i].style.color = "red";
+			}
+			
+			
+			document.body.innerHTML = "<input type='button' value='按 钮'/><input type='button' value='按钮'/><input type='button' value='按钮'/>"
+			var oBtn = document.getElementsByTagName("input");
+			
+			oBtn[0].onclick = function ()
+			{
+			    alert("表单元素共有：" + oBtn.length + "个");
+			};
+        }
+
+    </script>
+	
+</head>
+<body>
+    <div id="div1">JavaScript</div>
+	
+	<ul id="list">
+	    <li>HTML</li>
+	    <li>CSS</li>
+	    <li>JavaScript</li>
+	    <li>jQuery</li>
+	    <li>Vue.js</li>
+	</ul>
+</body>
+</html>

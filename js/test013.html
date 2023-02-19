@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script>
+        //定义全局变量，用于记录秒数
+        var n = 5;
+        window.onload = function ()
+        {
+            //设置定时器，重复执行函数countDown
+            var t = setInterval(currentTime, 1000);
+        }
+        //定义函数
+        function countDown()
+        {
+            //判断n是否大于 0，因为倒计时不可能有负数
+            if (n > 0) {
+                n--;
+                document.getElementById("num").innerHTML = n;
+            }
+        }
+		
+		function currentTime(){
+			document.getElementById("current").innerHTML = new Date();
+		}
+    </script>
+</head>
+<body>
+    <p>倒计时：<span id="num">5</span></p>
+	<p>当前时间：<span id="current">new Date()</span></p>
+</body>
+</html>
