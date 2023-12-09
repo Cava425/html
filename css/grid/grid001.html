@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid布局</title>
+    <style>
+      .layout {
+        width: 1400px;
+        min-height: 500px;
+        background-color: #fff;
+        /* 上下0, 左右auto可以实现剧中 */
+        margin: 0 auto;
+        padding: 30px;
+        border-radius: 10px;
+        /* 阴影 */
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+
+        /* flex布局 两端对齐 最后一行左对齐 */
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+
+      .layout .box {
+        width: 300px;
+        height: 200px;
+        background-color: skyblue;
+
+        /* 字体颜色 */
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        margin-bottom: 40px;
+
+        border-radius: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="layout">
+      <div class="box">box方块</div>
+      <div class="box">box方块</div>
+      <div class="box">box方块</div>
+      <div class="box">box方块</div>
+      <div class="box">box方块</div>
+      <div class="box">box方块</div>
+      <div class="box">box方块</div>
+      <div class="box">box方块</div>
+      <div class="box">box方块</div>
+    </div>
+  </body>
+</html>
