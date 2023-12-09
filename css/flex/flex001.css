@@ -1,0 +1,47 @@
+.container {
+  background-color: skyblue;
+  border: 2px dotted black;
+
+  width: 500px;
+  height: 300px;
+
+  /* flex */
+  display: flex;
+
+  /* 4.对齐 */
+  /* align-items: stretch; */
+  /* align-items: baseline; 文字底线对齐*/
+  /* 交叉轴 */
+  /* align-items: center; */
+  /* 主轴 */
+  /* justify-content: space-between; */
+
+  /* 5.换行 */
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+.container .item {
+  border: 1px solid black;
+  /* width: max-content; */
+  /* width: min-content; */
+
+  /* 1. flex-grow 元素扩张*/
+  /* 指定宽度 */
+  /* flex-basis: 50px; */
+  /* flex-grow: 1; */
+
+  /* 2. flex-shrink 元素收缩*/
+  /* flex-shrink: 1;
+  flex-basis: 200px; */
+
+  /* 3. flex: grow shrink basis 默认flex: 0 1 auto;*/
+  /* flex: 0 1 auto; */
+
+  flex-basis: 200px;
+}
+
+/* 指定第一个item多占一点 */
+/* .container .item:nth-child(1) {
+  flex-grow: 6;
+} */
